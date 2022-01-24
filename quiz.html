@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Code Quiz</title>
+      
+
+    </head>
+    <body>
+        <header>
+            <h1 class="title" onclick="pageLoad()">Code Quiz Challenge</h1>
+            <div class="subtitle">
+                <h2 class="hoverable-text" onclick="renderHighScores()">View High Scores</h2>
+                <h2 id="timer-el"></h2>
+            </div>
+        </header>
+        <main>
+            <div class="quiz" id="quiz">
+            <h3>Coding Quiz Challenge</h3>
+            <p>To answer the following code-related questions within the time limit</p>
+            <p>Keep in mind that incorrect answers will penalize your score/time by ten seconds</p>
+            <button class="hoverable-button" onclick="beginQuiz()">Start Quiz!</button>
+        </section>
+    </div>
+        <section id="question-card" class="question-card" style="display: none";>
+            <h3 id="question-text-el">Commonly used data types DO Not Include: </h3>
+            <div id="answers-container-el">
+                <button class="hoverable-button answer-choice">1. strings</button>
+                <button class="hoverable-button answer-choice">2. booleans</button>
+                <button class="hoverable-button answer-choice">3. alerts</button>
+                <button class="hoverable-button answer-choice">4. numbers</button>
+            </div>
+            <h3 id="question-text-el">The condition in an if/else statement is enclosed with______. </h3>
+            <div id="answers-container-el">
+                <button class="hoverable-button answer-choice">1. quotes</button>
+                <button class="hoverable-button answer-choice">2. curly brackets</button>
+                <button class="hoverable-button answer-choice">3. parenthesis</button>
+                <button class="hoverable-butotn answer-choice">4. square brackets</button>
+            </div>
+            <h3 id="question-text-el">Arrays in JavaScript can be used to store _______.</h3>
+            <div id="answers-container-el">
+                <button class="hoverable-button answer-choice">1. numbers and strings</button>
+                <button class="hoverable-button answer-choice">2. other arrays</button>
+                <button class="hoverable-button answer-choice">3. booelans</button>
+                <button class="hoverable-button answer-choice">4. all of the above</button>
+            </div>
+            <h3 id="question-text-el">String values must be enclosed within _______ when being assigned to variables.</h3>
+            <div id="answers-container-el">
+                <button class="hoverable-button answer-choice">1. commas</button>
+                <button class="hoverable-button answer-choice">2. curly brackets</button>
+                <button class="hoverable-button answer-choice">3. quotes</button>
+                <button class="hoverable-button answer-choice">4. parenthesis</button>
+            </div>
+            <h3 id="question-text-el">A very useful tool used in development and debugging for printing content to the Debugger is:</h3>
+            <div id="answers-container-el">
+                <button class="hoverable-button answer-choice">1. JavaScript</button>
+                <button class="hoverable-button answer-choice">2. terminal/bash</button>
+                <button class="hoverable-button answer-choice">3. for loops</button>
+                <button class="hoverable-button answer-choice">4. console.log</button>
+            </div>
+        </section>
+        <section id="results" class="results" style="display: flex";>
+
+        </section>
+
+        </main>
+        <script type="text/Javascript" src="./questions.js"></script>
+
+    </body>
+</html>
